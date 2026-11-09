@@ -1,63 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DashNovel 개인정보 처리방침</title>
+<title>DashNovel 개인정보 처리방침 · Privacy Policy</title>
 <style>
   :root {
-    --bg: #f7f7f5;
-    --card: #ffffff;
-    --text: #1a1a1a;
-    --muted: #757575;
-    --line: #e3e3e0;
-    --accent: #3b7dd8;
+    --bg: #f7f7f5; --card: #ffffff; --text: #1a1a1a; --muted: #757575; --line: #e3e3e0; --accent: #3b7dd8;
   }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #131313;
-      --card: #1e1e1e;
-      --text: #f0f0f0;
-      --muted: #9a9a9a;
-      --line: #2e2e2e;
-      --accent: #5b9bf0;
-    }
+    :root { --bg: #131313; --card: #1e1e1e; --text: #f0f0f0; --muted: #9a9a9a; --line: #2e2e2e; --accent: #5b9bf0; }
   }
   * { box-sizing: border-box; }
   body {
-    margin: 0;
-    padding: 40px 16px 80px;
-    background: var(--bg);
-    color: var(--text);
-    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+    margin: 0; padding: 24px 16px 80px; background: var(--bg); color: var(--text);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", "PingFang TC", "PingFang SC", "Segoe UI", sans-serif;
   }
   main { max-width: 720px; margin: 0 auto; }
-  section {
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 16px;
-    padding: 28px 24px;
-    margin-bottom: 24px;
+  .bar { display: flex; justify-content: flex-end; margin-bottom: 20px; }
+  .bar select {
+    font: inherit; font-size: 0.85rem; border: 1px solid var(--line); background-color: var(--card); color: var(--muted);
+    border-radius: 999px; padding: 4px 28px 4px 12px; cursor: pointer; appearance: none; -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat; background-position: right 11px center;
   }
+  .bar select:hover, .bar select:focus { border-color: var(--accent); color: var(--accent); outline: none; }
+  article { margin-bottom: 48px; }
+  .js article[hidden] { display: none; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px 24px; }
   h1 { font-size: 1.6rem; margin: 0 0 6px; }
   h2 { font-size: 1.1rem; margin: 28px 0 8px; }
   h2:first-of-type { margin-top: 0; }
   p, li { color: var(--text); }
   ul { padding-left: 1.2em; }
-  .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 24px; }
-  .lang { color: var(--accent); font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; margin: 0 0 12px; }
+  .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 16px; }
+  .notice { color: var(--muted); font-size: 0.85rem; margin: 0 0 20px; padding-left: 12px; border-left: 3px solid var(--line); }
   a { color: var(--accent); }
 </style>
 </head>
 <body>
 <main>
-  <h1>DashNovel 개인정보 처리방침</h1>
-  <p class="updated">시행일: 2026년 11월 9일 (처음 시행: 2026년 9월 21일)</p>
-
-  <section>
-    <p class="lang">한국어</p>
-
-    <h2>한 줄 요약</h2>
+<div class="bar"><select aria-label="Language"><option value="ko">한국어</option><option value="en">English</option><option value="ja">日本語</option><option value="zh-Hant">繁體中文</option><option value="zh-Hans">简体中文</option><option value="es">Español</option><option value="pt-BR">Português (Brasil)</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="it">Italiano</option><option value="id">Bahasa Indonesia</option><option value="vi">Tiếng Việt</option></select></div>
+<article lang="ko">
+<h1>DashNovel 개인정보 처리방침</h1>
+<p class="updated">시행일: 2026년 11월 9일 (처음 시행: 2026년 9월 21일)</p>
+<section>
+<h2>한 줄 요약</h2>
     <p>DashNovel은 개인정보를 <strong>자동으로 수집하지 않습니다.</strong> 작성한 글과 통계는 이용자의 기기와, iCloud 동기화를 켠 경우 이용자 본인의 iCloud 계정에만 저장됩니다. 개발자는 자체 서버를 두지 않으며 이 데이터에 접근할 수 없습니다. 이용자가 <strong>버그리포트</strong>를 직접 보낼 때만 그 리포트(원고 내용은 담지 않습니다)가 개발자에게 전달됩니다.</p>
 
     <h2>수집하는 정보</h2>
@@ -120,13 +108,14 @@
 
     <h2>문의 · 개인정보 보호책임자</h2>
     <p>RootNest(루트네스트) — 개인정보 보호책임자: 대표 · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
-  </section>
-
-  <section>
-    <p class="lang">English</p>
-    <p class="updated">Effective: November 9, 2026 (first effective: September 21, 2026)</p>
-
-    <h2>Summary</h2>
+</section>
+</article>
+<article lang="en">
+<h1>DashNovel Privacy Policy</h1>
+<p class="updated">Effective: November 9, 2026 (first effective: September 21, 2026)</p>
+<p class="notice">This translation is provided for your convenience. If it differs from the Korean original, the Korean original prevails.</p>
+<section>
+<h2>Summary</h2>
     <p>DashNovel <strong>does not collect personal data on its own.</strong> Everything you write, along with your writing statistics, is stored only on your devices and, if you turn on iCloud sync, in your own iCloud account. The developer runs no server of its own and cannot access this data. Only when you choose to send a <strong>bug report</strong> does that report (which never contains your writing) reach the developer.</p>
 
     <h2>Information we collect</h2>
@@ -189,7 +178,738 @@
 
     <h2>Contact and privacy officer</h2>
     <p>RootNest — privacy officer: Owner · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
-  </section>
+</section>
+</article>
+<article lang="ja">
+<h1>DashNovel プライバシーポリシー</h1>
+<p class="updated">施行日：2026年11月9日（初回施行日：2026年9月21日）</p>
+<p class="notice">この翻訳は便宜のために提供するものです。韓国語の原文と内容が異なる場合は、韓国語の原文が優先します。</p>
+<section>
+<h2>概要</h2>
+    <p>DashNovelは、個人情報を<strong>自動的に収集することはありません。</strong>お客様が書いた文章と執筆統計は、お客様のデバイスと、iCloud同期をオンにした場合はお客様ご自身のiCloudアカウントにのみ保存されます。開発者は独自のサーバを運用しておらず、これらのデータにアクセスすることはできません。お客様がご自身で<strong>不具合の報告</strong>を送信した場合に限り、その報告（原稿の内容は含まれません）が開発者に届きます。</p>
+
+    <h2>収集する情報</h2>
+    <p>会員登録やサインインはなく、アプリが自ら個人情報を集めることはありません。お客様が不具合の報告を送信することを選んだ場合に限り、下記「不具合の報告」に記載した情報を受け取ります。</p>
+
+    <h2>アプリが保存するもの</h2>
+    <ul>
+      <li>お客様が書いた原稿とそのフォルダ・ファイルの構成、登場人物・オブジェクト・タイムラインのカード、メモ</li>
+      <li>執筆統計（入力量・執筆量・作業時間・目標の達成記録）</li>
+      <li>アプリの設定（表示言語、フォント、集計基準など）</li>
+      <li>自動バックアップ（原稿の以前の版 — そのデバイスにのみ保存されます）</li>
+      <li>お客様が読み込んだフォントファイル（そのデバイスにのみ保存されます）</li>
+    </ul>
+    <p>これらはすべてお客様のデバイスに保存されます。アプリを削除すると、そのデバイス上のデータも一緒に削除されます。</p>
+
+    <h2>iCloud同期</h2>
+    <p>iCloud同期をオンにすると（設定 › 一般 — デバイスごとにオン・オフを切り替えられます）、原稿・統計と一部の設定が、AppleのiCloudを通じてお客様ご自身のiCloudアカウントに保存され、同じアカウントのほかのデバイスと同期されます。このデータはお客様ご自身のアカウント内にのみ存在し、開発者はアクセスできません。アプリを削除しても、iCloudアカウントに同期されたデータは残ります。自動バックアップと読み込んだフォントは同期されません。</p>
+
+    <h2>サブスクリプションと支払い</h2>
+    <p>サブスクリプション・無料トライアル・支払いは、すべてAppleのApp Storeが処理します。開発者がお客様の氏名・連絡先・支払い方法を受け取ることはありません。アプリは、サブスクリプションの有無と期間をデバイス上でAppleのStoreKitを通じて確認するだけで、その情報を開発者に送信することはありません。サブスクリプションの管理と解約は、デバイスのAppleアカウント設定で行えます。</p>
+
+    <h2>ロック</h2>
+    <p>アプリロックと作品ロックには、デバイスのFace ID・Touch ID・パスコードを使用します。認証はデバイス（iOS・macOS）が処理し、アプリが生体情報を受け取ったり保存したりすることはありません。</p>
+
+    <h2>不具合の報告</h2>
+    <p>アプリの設定 › ヘルプ › 「不具合の報告を送信」（TestFlightのベータ版では、画面上部の「不具合の報告」ボタンも）を選ぶと、送信する内容をあらかじめ表示するウインドウが開きます。報告は、お客様が「送信」をタップしたときにのみ送られ、自動的に送られることはありません。送信しなくても、アプリの利用が制限されることは一切ありません。</p>
+    <p><strong>報告に含まれるもの</strong></p>
+    <ul>
+      <li>アプリのバージョンとビルド番号、これまでに使ったビルド、デバイスのモデル、OSのバージョン、言語設定、タイムゾーン</li>
+      <li>空きストレージ容量、原稿保存領域のサイズと作成日</li>
+      <li>ライブラリの件数と長さ（作品・フォルダ・ファイル・カード・メモ・統計記録の数、作品ごとの作成日・ファイル数・文字数などの数値）</li>
+      <li>iCloud同期の状態（オン・オフ、接続状態、アップロード待ちの項目数、最後に受信した日時、エラー番号）と、自動バックアップの件数・サイズ</li>
+      <li>アプリの設定値（フォント・テーマ・集計基準など）</li>
+      <li>アプリ内で起きた出来事の記録（日時・種類・エラー番号 — 最新500件まで）と、過去のクラッシュ・フリーズの概要（OSが提供する技術情報）</li>
+      <li>お客様ご自身が書いた説明（任意）と、TestFlightのベータ版では名前（任意）</li>
+      <li>メールで送信した場合は、送信者のメールアドレスと、お客様がメールに書き加えた内容</li>
+      <li>「作品・ファイルの名前も一緒に送信」をオンにした場合に限り、作品名・ファイル名</li>
+    </ul>
+    <p><strong>報告に含まれないもの：</strong>原稿の本文、カード・メモの内容、iCloudアカウントのメールアドレス・氏名、連絡先、位置情報、広告識別子。</p>
+    <p><strong>送信先：</strong>App Storeで入手したアプリでは、報告をファイルとしてメールに添付してお客様のメールアプリに渡し、お客様ご自身が送信します（宛先は<a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a>）。アプリが報告をほかの場所へ送信することはありません。メールアプリがない場合は、報告ファイルを書き出して、お客様ご自身で送ることができます。</p>
+    <p>TestFlightのベータ版では、報告をAppleのiCloud（CloudKit）公開データベースのうち、DashNovel専用の領域に保存します。CloudKitは、送信者を区別する番号（Appleがこのアプリ専用に割り当てる番号であり、メールアドレスや実名ではありません）もあわせて記録します。ほかのユーザが報告を読むことはできず、読めるのは開発者だけです。iCloudにサインインしていない場合は送信せず、お客様が報告ファイルを直接渡せるようにします。</p>
+    <p><strong>利用目的：</strong>問題の原因を見つけて修正するためにのみ利用します。広告・トラッキング・マーケティングには利用せず、第三者に提供したり販売したりすることはありません。</p>
+    <p><strong>保存期間：</strong>問題の修正に必要なあいだ保存し、受信した日から1年以内に削除します。</p>
+    <p><strong>開示・削除の請求：</strong>送信した報告の確認や削除を希望される場合は、送信した日付とデバイスのモデルを添えて、下記のお問い合わせ先までご連絡ください。該当する報告を探し、お見せするか削除します。</p>
+
+    <h2>国外での保存</h2>
+    <p>メールで受け取った不具合の報告はGoogle LLC（米国）のGmailサーバに、TestFlightのベータ版から送信された不具合の報告はApple Inc.（米国）のiCloudサーバに保存されます。保存される項目は上記「報告に含まれるもの」のとおりで、お客様がメールを送信するか「送信」をタップしたときにインターネットを通じて送信され、保存期間は上記のとおりです。報告を送信しなければ何も送信されず、アプリの利用が制限されることも一切ありません。Googleのプライバシーに関するお問い合わせ：<a href="https://policies.google.com/privacy?hl=ja">policies.google.com/privacy</a> · Appleのプライバシーに関するお問い合わせ：<a href="https://www.apple.com/jp/legal/privacy/contact/">apple.com/legal/privacy/contact</a></p>
+
+    <h2>外部への送信</h2>
+    <p>アプリは独自のサーバを持たず、広告・分析・トラッキングのための機能を一切含みません。お客様が送信を選んだ不具合の報告を除き、利用状況のデータを送信することはなく、第三者と何かを共有することもありません。</p>
+
+    <h2>書き出しと共有</h2>
+    <p>お客様が原稿を書き出したり、執筆記録をシェアカード（画像）にしたりする場合、そのファイルや画像をどこに保存・送信するかは、お客様が共有シート（iPhone・iPad）または保存パネル（Mac）でご自身で決めます。シェアカードには作品名やファイル名は含まれません。開発者はその過程に関与せず、内容を知ることもできません。</p>
+
+    <h2>お子様について</h2>
+    <p>このアプリには会員登録がなく、個人情報を自動的に収集することもありません。不具合の報告は、利用者ご自身が送信を選んだ場合にのみ送られます。</p>
+
+    <h2>本ポリシーの変更</h2>
+    <p>本ポリシーの内容が変更された場合は、更新したものをこのページに掲載してお知らせします。</p>
+
+    <h2>お問い合わせ・個人情報保護責任者</h2>
+    <p>RootNest — 個人情報保護責任者：代表 · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
+</section>
+</article>
+<article lang="zh-Hant">
+<h1>DashNovel 隱私權政策</h1>
+<p class="updated">生效日期：2026 年 11 月 9 日（首次生效：2026 年 9 月 21 日）</p>
+<p class="notice">本譯文僅為方便閱讀而提供。如與韓文原文有任何出入，以韓文原文為準。</p>
+<section>
+<h2>摘要</h2>
+    <p>DashNovel <strong>不會自動蒐集個人資料。</strong>使用者撰寫的內容與寫作統計，只會儲存在使用者的裝置上，以及開啟 iCloud 同步時使用者本人的 iCloud 帳號中。開發者沒有設置自己的伺服器，也無法存取這些資料。只有在使用者主動傳送<strong>問題回報</strong>時，該回報（不含稿件內容）才會送達開發者。</p>
+
+    <h2>蒐集的資訊</h2>
+    <p>本 App 沒有註冊或登入機制，也不會自行蒐集個人資料。只有在使用者選擇傳送問題回報時，我們才會收到下方「問題回報」所列的資訊。</p>
+
+    <h2>App 儲存的內容</h2>
+    <ul>
+      <li>使用者撰寫的稿件與資料夾、檔案結構，角色、物件、時間軸卡片，以及便條</li>
+      <li>寫作統計（輸入量、寫作量、寫作時間、目標達成紀錄）</li>
+      <li>App 設定（顯示語言、字體、統計基準等）</li>
+      <li>自動備份（稿件的先前版本——僅存放在該裝置上）</li>
+      <li>使用者匯入的字體檔案（僅存放在該裝置上）</li>
+    </ul>
+    <p>以上內容全部儲存在使用者的裝置上。刪除 App 時，該裝置上的資料也會一併刪除。</p>
+
+    <h2>iCloud 同步</h2>
+    <p>開啟 iCloud 同步後（設定 › 一般——每台裝置可個別開啟或關閉），稿件、統計與部分設定會透過 Apple 的 iCloud 儲存在使用者本人的 iCloud 帳號中，並與同一帳號的其他裝置保持同步。這些資料只存在於使用者本人的帳號中，開發者無法存取。即使刪除 App，已同步到 iCloud 帳號的資料仍會保留。自動備份與匯入的字體不會同步。</p>
+
+    <h2>訂閱與付款</h2>
+    <p>訂閱、免費試用與付款，全部由 Apple 的 App Store 處理。開發者不會取得使用者的姓名、聯絡資料或付款方式。App 只會在裝置上透過 Apple 的 StoreKit 確認是否訂閱及訂閱期間，不會將這些資訊傳送給開發者。訂閱的管理與取消，可在裝置的 Apple 帳號設定中進行。</p>
+
+    <h2>鎖定</h2>
+    <p>App 鎖定與作品鎖定使用裝置的 Face ID、Touch ID 或密碼。驗證由裝置（iOS、macOS）處理，App 不會接收或儲存生物特徵資料。</p>
+
+    <h2>問題回報</h2>
+    <p>點選 App 中的設定 › 輔助說明 ›「傳送問題回報」（TestFlight 測試版也可使用畫面上方的「回報問題」按鈕）後，會打開一個預先顯示傳送內容的視窗。只有在使用者點一下「傳送」時才會傳送，絕不會自動傳送。不傳送也不會對使用 App 造成任何限制。</p>
+    <p><strong>包含的內容</strong></p>
+    <ul>
+      <li>App 版本與建置編號、曾使用過的建置版本、裝置型號、作業系統版本、語言設定、時區</li>
+      <li>可用儲存空間，以及稿件儲存庫的大小與建立日期</li>
+      <li>書庫的數量與長度（作品、資料夾、檔案、卡片、便條與統計紀錄的數量，以及每部作品的建立日期、檔案數、文字長度等數字）</li>
+      <li>iCloud 同步狀態（開啟或關閉、連線狀態、待上傳的項目數、最後一次下載的時間、錯誤代碼），以及自動備份的數量與大小</li>
+      <li>App 設定值（字體、主題、統計基準等）</li>
+      <li>App 內所發生事件的紀錄（時間、類型、錯誤代碼——最多為最近 500 筆），以及過去當機與停止回應的摘要（作業系統提供的技術資訊）</li>
+      <li>使用者親自輸入的說明（可不填寫）；TestFlight 測試版另含名稱（可不填寫）</li>
+      <li>以電子郵件傳送時，寄件者的電子郵件地址，以及使用者在郵件中另外寫下的內容</li>
+      <li>僅在開啟「一併傳送作品與檔案名稱」時，才包含作品與檔案名稱</li>
+    </ul>
+    <p><strong>不包含的內容：</strong>稿件內文、卡片與便條的內容、iCloud 帳號的電子郵件地址與姓名、聯絡人、位置、廣告識別碼。</p>
+    <p><strong>傳送對象：</strong>從 App Store 下載的 App，會將回報以檔案形式附加在郵件中並交給使用者的郵件 App，由使用者親自寄出（收件地址 <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a>）。App 不會將回報傳送到其他任何地方。若沒有郵件 App，使用者可以將回報檔案匯出後自行寄送。</p>
+    <p>TestFlight 測試版會將回報儲存在 Apple iCloud（CloudKit）公開資料庫中 DashNovel 專用的空間。CloudKit 也會一併記錄用來區分寄件者的編號（Apple 僅為本 App 指派的編號，並非電子郵件地址或真實姓名）。其他使用者無法讀取回報，只有開發者可以讀取。若未登入 iCloud，回報就不會傳送，使用者可以自行轉交回報檔案。</p>
+    <p><strong>使用目的：</strong>僅用於找出並修正問題的原因。絕不會用於廣告、追蹤或行銷，也不會提供或出售給第三方。</p>
+    <p><strong>保存期間：</strong>在修正問題所需的期間內保存，並於收到之日起一年內刪除。</p>
+    <p><strong>查閱與刪除請求：</strong>如需查看或刪除已傳送的回報，請將傳送日期與裝置型號寄到下方的聯絡地址。我們會找出該回報，提供查閱或予以刪除。</p>
+
+    <h2>境外保存</h2>
+    <p>以電子郵件收到的問題回報，保存在 Google LLC（美國）的 Gmail 伺服器；TestFlight 測試版傳送的問題回報，保存在 Apple Inc.（美國）的 iCloud 伺服器。保存的項目為上方「包含的內容」所列項目，會在使用者寄出郵件或點一下「傳送」時經由網際網路傳輸，保存期間同上。不傳送就不會有任何傳輸，也不會對使用 App 造成任何限制。Google 隱私權資訊：<a href="https://policies.google.com/privacy?hl=zh-TW">policies.google.com/privacy</a> · Apple 隱私權聯絡：<a href="https://www.apple.com/tw/legal/privacy/contact/">apple.com/legal/privacy/contact</a></p>
+
+    <h2>對外傳輸</h2>
+    <p>本 App 沒有自己的伺服器，也完全不含任何廣告、分析或追蹤元件。除了使用者主動傳送的問題回報之外，不會傳送使用紀錄，也不會提供任何內容給第三方。</p>
+
+    <h2>匯出與分享</h2>
+    <p>使用者將稿件匯出為檔案，或將寫作紀錄製作成分享卡片（圖片）時，檔案或圖片要儲存在哪裡、傳送到哪裡，由使用者透過分享功能（iPhone、iPad）或儲存視窗（Mac）自行決定。分享卡片不包含作品與檔案名稱。開發者不會參與這個過程，也無從得知其內容。</p>
+
+    <h2>兒童</h2>
+    <p>本 App 沒有註冊機制，也不會自動蒐集個人資料。問題回報只會在使用者主動選擇時才會傳送。</p>
+
+    <h2>政策變更</h2>
+    <p>本政策內容如有變更，將於本頁面公告更新後的版本。</p>
+
+    <h2>聯絡方式與個人資料保護負責人</h2>
+    <p>RootNest — 個人資料保護負責人：代表人 · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
+</section>
+</article>
+<article lang="zh-Hans">
+<h1>DashNovel 隐私政策</h1>
+<p class="updated">生效日期：2026年11月9日（首次生效日期：2026年9月21日）</p>
+<p class="notice">本译文仅为方便阅读而提供。如与韩文原文有出入，以韩文原文为准。</p>
+<section>
+<h2>概要</h2>
+    <p>DashNovel <strong>不会自行收集个人信息。</strong>你写下的全部内容以及写作统计，仅保存在你的设备上；如果你开启了 iCloud 同步，还会保存在你本人的 iCloud 账户中。开发者不运营任何自有服务器，也无法访问这些数据。只有当你自行选择发送<strong>问题反馈</strong>时，该报告（绝不包含你的稿件内容）才会送达开发者。</p>
+
+    <h2>我们收集的信息</h2>
+    <p>本 App 没有账户，也无需登录，不会自行收集个人信息。只有在你选择发送问题反馈时，我们才会收到下文“问题反馈”部分所列的信息。</p>
+
+    <h2>App 保存的内容</h2>
+    <ul>
+      <li>你的稿件及存放稿件的文件夹和文件、角色、物件和时间线卡片，以及便签</li>
+      <li>写作统计（输入量、写作量、写作时间、目标达成记录）</li>
+      <li>App 设置（显示语言、字体、统计基准等）</li>
+      <li>自动备份（稿件的旧版本——仅保存在该设备上）</li>
+      <li>你导入的字体文件（仅保存在该设备上）</li>
+    </ul>
+    <p>以上内容全部保存在你的设备上。删除 App 时，该设备上的数据会一并删除。</p>
+
+    <h2>iCloud 同步</h2>
+    <p>如果你开启 iCloud 同步（设置 › 通用——可在每台设备上分别开启或关闭），你的稿件、统计和部分设置会通过 Apple 的 iCloud 保存在你本人的 iCloud 账户中，并与使用同一账户的其他设备保持同步。这些数据仅存在于你本人的账户中，开发者无法访问。即使删除 App，已同步到 iCloud 账户的数据仍会保留。自动备份和导入的字体不会同步。</p>
+
+    <h2>订阅与付款</h2>
+    <p>订阅、免费试用和付款全部由 Apple 的 App Store 处理。开发者不会获得你的姓名、联系方式或付款方式。App 只在你的设备上通过 Apple 的 StoreKit 确认你是否已订阅以及订阅到何时，不会将这些信息发送给开发者。你可以在设备的 Apple 账户设置中管理或取消订阅。</p>
+
+    <h2>锁定</h2>
+    <p>App 锁定和作品锁定使用设备的面容 ID、触控 ID 或密码。验证由设备（iOS 或 macOS）完成；App 绝不会接收或保存生物识别信息。</p>
+
+    <h2>问题反馈</h2>
+    <p>在 App 中选择“设置 › 帮助 › 发送问题反馈”（在 TestFlight 测试版中，也可使用屏幕顶部的“反馈问题”按钮），会打开一个窗口，预先显示将要发送的内容。只有在你轻点“发送”时才会发送，绝不会自动发送。不发送报告也不会对 App 的使用造成任何限制。</p>
+    <p><strong>报告包含的内容</strong></p>
+    <ul>
+      <li>App 版本与版本号、使用过的版本号、设备型号、操作系统版本、语言设置和时区</li>
+      <li>可用储存空间，以及稿件存储的大小和创建日期</li>
+      <li>书库中的数量和长度（作品、文件夹、文件、卡片、便签和统计记录的数量，以及每个作品的创建日期、文件数、文字长度等数字）</li>
+      <li>iCloud 同步状态（开启或关闭、连接状态、待上传项目数、上次接收时间、错误代码），以及自动备份的数量和大小</li>
+      <li>App 设置（字体、主题、统计基准等）</li>
+      <li>App 内发生的事件记录（时间、类型和错误代码——最多为最近 500 条），以及过往崩溃和卡顿的摘要（操作系统提供的技术信息）</li>
+      <li>你自己填写的说明（可不填），在 TestFlight 测试版中还有姓名（可不填）</li>
+      <li>如果通过邮件发送，则包括你的邮箱地址以及你在邮件中另外写下的内容</li>
+      <li>仅在你开启“同时发送作品和文件名称”时，包括作品和文件的名称</li>
+    </ul>
+    <p><strong>报告绝不包含的内容：</strong>你的稿件、卡片或便签的内容、你的 iCloud 账户邮箱或姓名、联系人、位置或广告标识符。</p>
+    <p><strong>发送去向：</strong>在 App Store 版本中，App 会将报告作为文件附在邮件中交给你的邮件 App，由你自己发送（收件地址为 <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a>）。App 不会把报告发送到其他任何地方。如果你没有邮件 App，可以导出报告文件后自行发送。</p>
+    <p>TestFlight 测试版会将报告存储在 Apple 的 iCloud（CloudKit）公共数据库中 DashNovel 专属的区域。CloudKit 还会记录一个用于区分发送者的编号（Apple 仅为本 App 分配的编号，并非你的邮箱地址或真实姓名）。其他用户无法读取报告，只有开发者可以读取。如果你没有登录 iCloud，报告不会被发送，你可以改为自行转交报告文件。</p>
+    <p><strong>使用目的：</strong>仅用于查找和修复问题。报告绝不会用于广告、跟踪或营销，也绝不会提供或出售给任何第三方。</p>
+    <p><strong>保存期限：</strong>在修复问题所需的期间内保存，并在收到之日起一年内删除。</p>
+    <p><strong>查阅与删除：</strong>如需查看或删除你发送过的报告，请将发送日期和设备型号写信告知下方的联系地址。我们会找到该报告，向你出示或将其删除。</p>
+
+    <h2>境外存储</h2>
+    <p>通过邮件收到的问题反馈保存在 Google LLC（美国）的 Gmail 服务器上；从 TestFlight 测试版发送的问题反馈保存在 Apple Inc.（美国）的 iCloud 服务器上。存储的项目见上文“报告包含的内容”；在你发送邮件或轻点“发送”时通过互联网传输，保存期限如上所述。如果你不发送报告，则不会传输任何内容，App 的使用也不受任何限制。Google 隐私政策：<a href="https://policies.google.com/privacy?hl=zh-CN">policies.google.com/privacy</a> · Apple 隐私问题联系：<a href="https://www.apple.com.cn/legal/privacy/contact/">apple.com/legal/privacy/contact</a></p>
+
+    <h2>向外部发送的数据</h2>
+    <p>本 App 没有自有服务器，也不包含任何广告、分析或跟踪组件。除你选择发送的问题反馈外，App 不会发送使用记录，也不会与第三方共享任何内容。</p>
+
+    <h2>导出与分享</h2>
+    <p>当你将稿件导出为文件，或将写作记录做成分享卡片（图片）时，由你通过共享表单（iPhone 和 iPad）或存储面板（Mac）自行决定该文件或图片保存或发送到何处。分享卡片不包含作品或文件的名称。开发者不参与这一过程，也无法得知其内容。</p>
+
+    <h2>儿童</h2>
+    <p>本 App 无需注册，也不会自行收集个人信息。问题反馈只有在用户自行选择发送时才会发送。</p>
+
+    <h2>本政策的变更</h2>
+    <p>如本政策发生变更，更新后的版本将发布在本页面上。</p>
+
+    <h2>联系方式与个人信息保护负责人</h2>
+    <p>RootNest — 个人信息保护负责人：经营者 · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
+</section>
+</article>
+<article lang="es">
+<h1>Política de privacidad de DashNovel</h1>
+<p class="updated">Entrada en vigor: 9 de noviembre de 2026 (primera entrada en vigor: 21 de septiembre de 2026)</p>
+<p class="notice">Esta traducción se ofrece para tu comodidad. Si difiere del original en coreano, prevalece el original en coreano.</p>
+<section>
+<h2>Resumen</h2>
+    <p>DashNovel <strong>no recopila datos personales de forma automática.</strong> Todo lo que escribes, junto con tus estadísticas de escritura, se guarda solo en tus dispositivos y, si activas la sincronización con iCloud, en tu propia cuenta de iCloud. El desarrollador no tiene servidores propios y no puede acceder a estos datos. Solo cuando decides enviar un <strong>informe de error</strong>, ese informe (que nunca contiene lo que escribes) llega al desarrollador.</p>
+
+    <h2>Información que recopilamos</h2>
+    <p>No hay cuentas ni inicio de sesión, y la app no reúne información personal por sí misma. Solo recibimos la información que se indica más abajo, en “Informes de error”, si decides enviar uno.</p>
+
+    <h2>Lo que guarda la app</h2>
+    <ul>
+      <li>Tus manuscritos y las carpetas y archivos que los contienen, las tarjetas de personajes, objetos y cronología, y las notas</li>
+      <li>Estadísticas de escritura (caracteres tecleados, caracteres escritos, tiempo de escritura y registros de metas)</li>
+      <li>Ajustes de la app (idioma de la interfaz, fuente, base de conteo, etc.)</li>
+      <li>Copias automáticas (versiones anteriores de tus manuscritos; se guardan solo en ese dispositivo)</li>
+      <li>Archivos de fuentes que importes (se guardan solo en ese dispositivo)</li>
+    </ul>
+    <p>Todo esto se guarda en tu dispositivo. Cuando eliminas la app, los datos de ese dispositivo se eliminan con ella.</p>
+
+    <h2>Sincronización con iCloud</h2>
+    <p>Si activas la sincronización con iCloud (Ajustes › General; puedes activarla o desactivarla en cada dispositivo), tus manuscritos, tus estadísticas y algunos ajustes se guardan en tu propia cuenta de iCloud a través de iCloud de Apple y se mantienen sincronizados con tus otros dispositivos que usan la misma cuenta. Estos datos permanecen en tu propia cuenta y el desarrollador no puede acceder a ellos. Los datos sincronizados con tu cuenta de iCloud se conservan allí aunque elimines la app. Las copias automáticas y las fuentes importadas no se sincronizan.</p>
+
+    <h2>Suscripciones y pagos</h2>
+    <p>Las suscripciones, las pruebas gratuitas y los pagos los gestiona en su totalidad la App Store de Apple. El desarrollador no recibe tu nombre, tus datos de contacto ni tu método de pago. La app comprueba en tu dispositivo, mediante StoreKit de Apple, si tienes una suscripción y hasta cuándo, y no envía esa información al desarrollador. Puedes gestionar o cancelar una suscripción en los ajustes de tu Cuenta de Apple en el dispositivo.</p>
+
+    <h2>Bloqueo</h2>
+    <p>El bloqueo de la app y el bloqueo de proyecto usan Face ID, Touch ID o el código de tu dispositivo. La autenticación la realiza el dispositivo (iOS o macOS); la app nunca recibe ni guarda datos biométricos.</p>
+
+    <h2>Informes de error</h2>
+    <p>Al elegir Ajustes › Ayuda › “Enviar informe de error” (en las versiones beta de TestFlight, también el botón “Reportar error” de la parte superior de la pantalla) se abre una ventana que muestra lo que se enviará. El informe solo se envía cuando tocas “Enviar”, nunca de forma automática. No enviarlo no limita la app en absoluto.</p>
+    <p><strong>Qué contiene un informe</strong></p>
+    <ul>
+      <li>La versión y la compilación de la app, las compilaciones que has usado, el modelo del dispositivo, la versión del sistema operativo, los ajustes de idioma y la zona horaria</li>
+      <li>El espacio de almacenamiento libre, y el tamaño y la fecha de creación del almacén de manuscritos</li>
+      <li>Recuentos y longitudes de tu biblioteca (el número de proyectos, carpetas, archivos, tarjetas, notas y registros de estadísticas, y cifras por proyecto como la fecha de creación, el número de archivos y la longitud del texto)</li>
+      <li>El estado de la sincronización con iCloud (activada o desactivada, estado de la conexión, elementos pendientes de subir, hora de la última descarga, códigos de error) y el número y el tamaño de las copias automáticas</li>
+      <li>Los ajustes de la app (fuente, tema, base de conteo, etc.)</li>
+      <li>Un registro de los eventos de la app (hora, tipo y código de error; hasta los 500 más recientes) y resúmenes de cierres inesperados y bloqueos anteriores (información técnica que proporciona el sistema operativo)</li>
+      <li>Una descripción que escribas tú (opcional) y, en las versiones beta de TestFlight, un nombre (opcional)</li>
+      <li>Si lo envías por correo electrónico, tu dirección de correo y lo que agregues al mensaje</li>
+      <li>Los nombres de proyectos y archivos, solo si activas “Incluir nombres de proyectos y archivos”</li>
+    </ul>
+    <p><strong>Lo que un informe nunca contiene:</strong> tus manuscritos, el contenido de las tarjetas o las notas, la dirección de correo o el nombre de tu cuenta de iCloud, tus contactos, tu ubicación ni identificadores publicitarios.</p>
+    <p><strong>Adónde va:</strong> En la versión de la App Store, el informe se adjunta como archivo a un correo que la app pasa a tu app de correo, y lo envías tú (a <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a>). La app no envía el informe a ningún otro lugar. Si no tienes una app de correo, puedes exportar el archivo del informe y enviarlo tú.</p>
+    <p>Las versiones beta de TestFlight guardan los informes en el espacio propio de DashNovel dentro de la base de datos pública de iCloud (CloudKit) de Apple. CloudKit también registra un número que distingue a los remitentes (un número que Apple asigna solo para esta app; no es tu dirección de correo ni tu nombre real). Los demás usuarios no pueden leer los informes; solo puede hacerlo el desarrollador. Si no has iniciado sesión en iCloud, el informe no se envía, y en su lugar puedes hacer llegar tú el archivo del informe.</p>
+    <p><strong>Para qué se usa:</strong> Solo para encontrar y corregir problemas. Los informes nunca se usan con fines de publicidad, seguimiento ni marketing, y nunca se comparten con terceros ni se venden.</p>
+    <p><strong>Cuánto tiempo se conserva:</strong> El tiempo necesario para corregir el problema; se elimina en un plazo de un año desde su recepción.</p>
+    <p><strong>Acceso y eliminación:</strong> Para ver o eliminar un informe que enviaste, escribe a la dirección de contacto que figura más abajo e indica la fecha en que lo enviaste y el modelo de tu dispositivo. Lo buscaremos y te lo mostraremos o lo eliminaremos.</p>
+
+    <h2>Almacenamiento fuera de tu país</h2>
+    <p>Los informes de error recibidos por correo electrónico se guardan en servidores de Gmail de Google LLC (Estados Unidos); los informes enviados desde las versiones beta de TestFlight se guardan en servidores de iCloud de Apple Inc. (Estados Unidos). Lo que se almacena se indica en “Qué contiene un informe”; se transmite por internet cuando envías el correo o tocas “Enviar”, y se conserva durante el plazo indicado más arriba. Si no envías un informe, no se transmite nada y la app no se limita en absoluto. Privacidad de Google: <a href="https://policies.google.com/privacy?hl=es">policies.google.com/privacy</a> · Contacto de privacidad de Apple: <a href="https://www.apple.com/es/legal/privacy/contact/">apple.com/legal/privacy/contact</a></p>
+
+    <h2>Datos enviados a otros lugares</h2>
+    <p>La app no tiene servidores propios y no contiene componentes de publicidad, análisis ni seguimiento. Aparte de los informes de error que decidas enviar, no envía datos de uso ni comparte nada con terceros.</p>
+
+    <h2>Exportar y compartir</h2>
+    <p>Cuando exportas un manuscrito o conviertes tu registro de escritura en una tarjeta para compartir (una imagen), tú decides dónde se guarda o a quién se envía el archivo o la imagen, mediante el menú Compartir (iPhone y iPad) o la ventana de guardado (Mac). Las tarjetas para compartir no incluyen nombres de proyectos ni de archivos. El desarrollador no interviene en el proceso y no puede ver su contenido.</p>
+
+    <h2>Menores</h2>
+    <p>La app no requiere registro y no recopila datos personales de forma automática. Los informes de error solo se envían cuando el usuario decide enviar uno.</p>
+
+    <h2>Cambios en esta política</h2>
+    <p>Si esta política cambia, la versión actualizada se publicará en esta página.</p>
+
+    <h2>Contacto y responsable de privacidad</h2>
+    <p>RootNest — responsable de privacidad: el titular · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
+</section>
+</article>
+<article lang="pt-BR">
+<h1>Política de Privacidade do DashNovel</h1>
+<p class="updated">Em vigor desde: 9 de novembro de 2026 (primeira vigência: 21 de setembro de 2026)</p>
+<p class="notice">Esta tradução é oferecida para sua conveniência. Se houver divergência em relação ao original em coreano, prevalece o original em coreano.</p>
+<section>
+<h2>Resumo</h2>
+    <p>O DashNovel <strong>não coleta dados pessoais por conta própria.</strong> Tudo o que você escreve, junto com as suas estatísticas de escrita, fica armazenado apenas nos seus dispositivos e, se você ativar a sincronização do iCloud, na sua própria conta do iCloud. O desenvolvedor não mantém nenhum servidor próprio e não tem acesso a esses dados. Somente quando você decide enviar um <strong>relato de problema</strong> esse relato (que nunca contém o seu texto) chega ao desenvolvedor.</p>
+
+    <h2>Informações que coletamos</h2>
+    <p>Não há conta nem login, e o app não reúne informações pessoais por conta própria. Só recebemos as informações listadas em “Relatos de problema”, abaixo, se você decidir enviar um.</p>
+
+    <h2>O que o app armazena</h2>
+    <ul>
+      <li>Seus manuscritos e as pastas e arquivos que os contêm, os cartões de personagens, objetos e linha do tempo, e as notas</li>
+      <li>Estatísticas de escrita (caracteres digitados, caracteres escritos, tempo de trabalho, registros de metas)</li>
+      <li>Ajustes do app (idioma de exibição, fonte, base de contagem etc.)</li>
+      <li>Backups automáticos (versões anteriores dos seus manuscritos — mantidos apenas naquele dispositivo)</li>
+      <li>Arquivos de fonte que você importa (mantidos apenas naquele dispositivo)</li>
+    </ul>
+    <p>Tudo isso fica armazenado no seu dispositivo. Quando você apaga o app, os dados daquele dispositivo são removidos junto.</p>
+
+    <h2>Sincronização do iCloud</h2>
+    <p>Se você ativar a sincronização do iCloud (Ajustes › Geral — você pode ativá-la ou desativá-la em cada dispositivo), seus manuscritos, suas estatísticas e alguns ajustes são armazenados na sua própria conta do iCloud por meio do iCloud da Apple e mantidos em sincronia com os seus outros dispositivos na mesma conta. Esses dados ficam somente na sua conta, e o desenvolvedor não tem acesso a eles. Os dados sincronizados com a sua conta do iCloud permanecem lá mesmo que você apague o app. Os backups automáticos e as fontes importadas não são sincronizados.</p>
+
+    <h2>Assinaturas e pagamentos</h2>
+    <p>Assinaturas, avaliações gratuitas e pagamentos são todos processados pela App Store da Apple. O desenvolvedor não recebe o seu nome, os seus dados de contato nem a sua forma de pagamento. O app verifica no seu dispositivo, por meio do StoreKit da Apple, se você é assinante e até quando, e não envia essa informação ao desenvolvedor. Você pode gerenciar ou cancelar uma assinatura nos ajustes da sua Conta Apple, no dispositivo.</p>
+
+    <h2>Bloqueio</h2>
+    <p>O bloqueio do app e o bloqueio do projeto usam o Face ID, o Touch ID ou o código do seu dispositivo. A autenticação é feita pelo próprio dispositivo (iOS ou macOS); o app nunca recebe nem armazena dados biométricos.</p>
+
+    <h2>Relatos de problema</h2>
+    <p>Ao escolher Ajustes › Ajuda › “Enviar relato de problema” (nas versões beta do TestFlight, também o botão “Relatar problema” no alto da tela), abre-se uma janela que mostra o que será enviado. Um relato só é enviado quando você toca em “Enviar” — nunca automaticamente. Deixar de enviar não limita o uso do app de forma alguma.</p>
+    <p><strong>O que um relato contém</strong></p>
+    <ul>
+      <li>A versão e a build do app, as builds que você já usou, o modelo do dispositivo, a versão do sistema operacional, os ajustes de idioma e o fuso horário</li>
+      <li>O espaço de armazenamento livre, e o tamanho e a data de criação do armazenamento de manuscritos</li>
+      <li>Contagens e tamanhos da sua biblioteca (o número de projetos, pastas, arquivos, cartões, notas e registros de estatísticas, e números de cada projeto, como data de criação, quantidade de arquivos e tamanho do texto)</li>
+      <li>O status da sincronização do iCloud (ativada ou desativada, estado da conexão, itens aguardando envio, último recebimento, códigos de erro) e a quantidade e o tamanho dos backups automáticos</li>
+      <li>Ajustes do app (fonte, tema, base de contagem etc.)</li>
+      <li>Um registro de eventos no app (horário, tipo e código de erro — até os 500 mais recentes) e resumos de falhas e travamentos anteriores (informações técnicas fornecidas pelo sistema operacional)</li>
+      <li>Uma descrição que você mesmo digitar (opcional) e, nas versões beta do TestFlight, um nome (opcional)</li>
+      <li>Se você enviar por e-mail, o seu endereço de e-mail e tudo o que você acrescentar ao e-mail</li>
+      <li>Nomes de projetos e arquivos, apenas se você ativar “Incluir nomes de projetos e arquivos”</li>
+    </ul>
+    <p><strong>O que um relato nunca contém:</strong> os seus manuscritos, o conteúdo de cartões ou notas, o e-mail ou o nome da sua conta do iCloud, contatos, localização ou identificadores de publicidade.</p>
+    <p><strong>Para onde vai:</strong> Na versão da App Store, o relato é anexado como arquivo a um e-mail que o app entrega ao seu app de e-mail, e é você quem o envia (para <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a>). O app não envia o relato para nenhum outro lugar. Se você não tiver um app de e-mail, pode exportar o arquivo do relato e enviá-lo você mesmo.</p>
+    <p>As versões beta do TestFlight armazenam os relatos na área própria do DashNovel no banco de dados público do iCloud da Apple (CloudKit). O CloudKit também registra um número que distingue os remetentes (um número que a Apple atribui apenas para este app — não é o seu endereço de e-mail nem o seu nome verdadeiro). Outros usuários não podem ler os relatos; somente o desenvolvedor pode. Se você não tiver iniciado sessão no iCloud, o relato não é enviado, e você pode encaminhar o arquivo do relato por conta própria.</p>
+    <p><strong>Como é usado:</strong> Apenas para encontrar e corrigir problemas. Os relatos nunca são usados para publicidade, rastreamento ou marketing, e nunca são compartilhados com terceiros nem vendidos a eles.</p>
+    <p><strong>Por quanto tempo é guardado:</strong> Pelo tempo necessário para corrigir o problema, e é apagado em até um ano a partir do recebimento.</p>
+    <p><strong>Acesso e exclusão:</strong> Para ver ou apagar um relato que você enviou, escreva para o endereço de contato abaixo informando a data em que o enviou e o modelo do seu dispositivo. Nós o localizaremos e o mostraremos a você ou o apagaremos.</p>
+
+    <h2>Armazenamento fora do seu país</h2>
+    <p>Os relatos de problema recebidos por e-mail ficam guardados nos servidores do Gmail da Google LLC (Estados Unidos); os relatos enviados pelas versões beta do TestFlight ficam guardados nos servidores do iCloud da Apple Inc. (Estados Unidos). O que é armazenado está listado em “O que um relato contém”; esses dados são transmitidos pela internet quando você envia o e-mail ou toca em “Enviar”, e são guardados pelo período indicado acima. Se você não enviar nenhum relato, nada é transmitido, e o uso do app não é limitado de forma alguma. Privacidade do Google: <a href="https://policies.google.com/privacy?hl=pt-BR">policies.google.com/privacy</a> · Contato de privacidade da Apple: <a href="https://www.apple.com/br/legal/privacy/contact/">apple.com/legal/privacy/contact</a></p>
+
+    <h2>Dados enviados a outros lugares</h2>
+    <p>O app não tem servidor próprio e não contém nenhum componente de publicidade, análise ou rastreamento. Fora os relatos de problema que você decide enviar, ele não envia dados de uso e não compartilha nada com terceiros.</p>
+
+    <h2>Exportação e compartilhamento</h2>
+    <p>Quando você exporta um manuscrito ou transforma o seu registro de escrita num cartão para compartilhar (uma imagem), é você quem decide onde o arquivo ou a imagem será salvo ou enviado, usando o menu Compartilhar (iPhone e iPad) ou a janela de salvar (Mac). Os cartões para compartilhar não incluem nomes de projetos nem de arquivos. O desenvolvedor não participa desse processo e não pode ver o conteúdo.</p>
+
+    <h2>Crianças</h2>
+    <p>O app não tem cadastro e não coleta dados pessoais por conta própria. Os relatos de problema só são enviados quando o usuário decide enviar um.</p>
+
+    <h2>Alterações nesta política</h2>
+    <p>Se esta política mudar, a versão atualizada será publicada nesta página.</p>
+
+    <h2>Contato e encarregado de proteção de dados</h2>
+    <p>RootNest — encarregado de proteção de dados pessoais: proprietário · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
+</section>
+</article>
+<article lang="de">
+<h1>DashNovel – Datenschutzerklärung</h1>
+<p class="updated">Gültig ab: 9. November 2026 (erstmals gültig ab: 21. September 2026)</p>
+<p class="notice">Diese Übersetzung dient nur deiner Bequemlichkeit. Weicht sie vom koreanischen Original ab, ist das koreanische Original maßgeblich.</p>
+<section>
+<h2>Zusammenfassung</h2>
+    <p>DashNovel <strong>erhebt von sich aus keine personenbezogenen Daten.</strong> Alles, was du schreibst, und deine Schreibstatistik werden nur auf deinen Geräten gespeichert und – wenn du die iCloud-Synchronisierung einschaltest – in deinem eigenen iCloud-Account. Der Entwickler betreibt keinen eigenen Server und hat keinen Zugriff auf diese Daten. Nur wenn du dich entscheidest, einen <strong>Fehlerbericht</strong> zu senden, erreicht dieser Bericht (der niemals deine Texte enthält) den Entwickler.</p>
+
+    <h2>Welche Daten wir erheben</h2>
+    <p>Es gibt kein Konto und keine Anmeldung, und die App sammelt von sich aus keine personenbezogenen Daten. Die unter „Fehlerberichte“ aufgeführten Angaben erhalten wir nur, wenn du dich entscheidest, einen Bericht zu senden.</p>
+
+    <h2>Was die App speichert</h2>
+    <ul>
+      <li>Deine Manuskripte samt den Ordnern und Dateien, in denen sie liegen, Figuren-, Objekt- und Zeitleistenkarten sowie Notizen</li>
+      <li>Schreibstatistik (getippte Zeichen, geschriebene Zeichen, Schreibzeit, Aufzeichnungen zur Zielerreichung)</li>
+      <li>App-Einstellungen (Anzeigesprache, Schrift, Zählweise usw.)</li>
+      <li>Automatische Sicherungen (frühere Fassungen deiner Manuskripte – nur auf dem jeweiligen Gerät)</li>
+      <li>Von dir importierte Schriftdateien (nur auf dem jeweiligen Gerät)</li>
+    </ul>
+    <p>All das wird auf deinem Gerät gespeichert. Wenn du die App löschst, werden die Daten auf diesem Gerät mit entfernt.</p>
+
+    <h2>iCloud-Synchronisierung</h2>
+    <p>Wenn du die iCloud-Synchronisierung einschaltest (Einstellungen › Allgemein – auf jedem Gerät einzeln ein- und ausschaltbar), werden deine Manuskripte, deine Statistik und einige Einstellungen über Apples iCloud in deinem eigenen iCloud-Account gespeichert und mit deinen anderen Geräten unter demselben Account abgeglichen. Diese Daten bleiben in deinem eigenen Account, und der Entwickler hat keinen Zugriff darauf. In deinen iCloud-Account synchronisierte Daten bleiben dort, auch wenn du die App löschst. Automatische Sicherungen und importierte Schriften werden nicht synchronisiert.</p>
+
+    <h2>Abos und Zahlungen</h2>
+    <p>Abos, kostenlose Testphasen und Zahlungen werden vollständig über den App Store von Apple abgewickelt. Der Entwickler erhält weder deinen Namen noch deine Kontaktdaten oder dein Zahlungsmittel. Die App prüft auf deinem Gerät über Apples StoreKit, ob und bis wann du ein Abo hast, und sendet diese Information nicht an den Entwickler. Ein Abo verwaltest oder kündigst du in den Einstellungen deines Apple Accounts auf deinem Gerät.</p>
+
+    <h2>Sperre</h2>
+    <p>App-Sperre und Projektsperre verwenden Face ID, Touch ID oder den Code deines Geräts. Die Authentifizierung übernimmt das Gerät (iOS oder macOS); die App erhält und speichert niemals biometrische Daten.</p>
+
+    <h2>Fehlerberichte</h2>
+    <p>Wählst du Einstellungen › Hilfe › „Fehlerbericht senden“ (in TestFlight-Betaversionen auch die Taste „Fehler melden“ oben auf dem Bildschirm), öffnet sich ein Fenster, das zeigt, was gesendet wird. Ein Bericht wird nur gesendet, wenn du auf „Senden“ tippst – niemals automatisch. Sendest du keinen, wird die App dadurch in keiner Weise eingeschränkt.</p>
+    <p><strong>Was ein Bericht enthält</strong></p>
+    <ul>
+      <li>App-Version und Build, die von dir bisher verwendeten Builds, Gerätemodell, Betriebssystemversion, Spracheinstellungen und Zeitzone</li>
+      <li>Freien Speicherplatz sowie Größe und Erstellungsdatum des Manuskriptspeichers</li>
+      <li>Anzahlen und Längen in deiner Bibliothek (Anzahl der Projekte, Ordner, Dateien, Karten, Notizen und Statistikeinträge sowie Angaben pro Projekt wie Erstellungsdatum, Dateianzahl und Textlänge)</li>
+      <li>Status der iCloud-Synchronisierung (ein oder aus, Verbindungsstatus, Elemente, die auf das Hochladen warten, Zeitpunkt des letzten Ladens, Fehlercodes) sowie Anzahl und Größe der automatischen Sicherungen</li>
+      <li>App-Einstellungen (Schrift, Design, Zählweise usw.)</li>
+      <li>Ein Protokoll der Ereignisse in der App (Zeitpunkt, Art und Fehlercode – höchstens die letzten 500) und Zusammenfassungen früherer Abstürze und Hänger (technische Informationen des Betriebssystems)</li>
+      <li>Eine Beschreibung, die du selbst eingibst (optional), und in TestFlight-Betaversionen einen Namen (optional)</li>
+      <li>Wenn du den Bericht per E-Mail sendest: deine E-Mail-Adresse und alles, was du der E-Mail hinzufügst</li>
+      <li>Projekt- und Dateinamen – nur, wenn du „Projekt- und Dateinamen mitsenden“ einschaltest</li>
+    </ul>
+    <p><strong>Was ein Bericht niemals enthält:</strong> deine Manuskripte, die Inhalte von Karten oder Notizen, die E-Mail-Adresse oder den Namen deines iCloud-Accounts, Kontakte, Standort oder Werbekennungen.</p>
+    <p><strong>Wohin er geht:</strong> In der App-Store-Version wird der Bericht als Datei an eine E-Mail angehängt, die die App an deine Mail-App übergibt; du sendest sie selbst (an <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a>). Die App sendet den Bericht nirgendwohin sonst. Hast du keine Mail-App, kannst du die Berichtsdatei exportieren und selbst senden.</p>
+    <p>TestFlight-Betaversionen speichern Berichte in einem eigenen Bereich von DashNovel in der öffentlichen Datenbank von Apples iCloud (CloudKit). CloudKit erfasst außerdem eine Nummer, die Absender voneinander unterscheidet (eine Nummer, die Apple nur für diese App vergibt – weder deine E-Mail-Adresse noch dein echter Name). Andere Nutzer können Berichte nicht lesen; das kann nur der Entwickler. Bist du nicht bei iCloud angemeldet, wird der Bericht nicht gesendet, und du kannst die Berichtsdatei stattdessen selbst weitergeben.</p>
+    <p><strong>Wofür er verwendet wird:</strong> Ausschließlich, um Probleme zu finden und zu beheben. Berichte werden niemals für Werbung, Tracking oder Marketing verwendet und niemals an Dritte weitergegeben oder verkauft.</p>
+    <p><strong>Wie lange er aufbewahrt wird:</strong> So lange, wie es zur Behebung des Problems nötig ist; gelöscht wird er innerhalb eines Jahres nach Eingang.</p>
+    <p><strong>Auskunft und Löschung:</strong> Möchtest du einen gesendeten Bericht einsehen oder löschen lassen, schreib an die unten genannte Kontaktadresse und gib das Sendedatum und dein Gerätemodell an. Wir suchen ihn heraus und zeigen ihn dir oder löschen ihn.</p>
+
+    <h2>Speicherung außerhalb deines Landes</h2>
+    <p>Per E-Mail eingegangene Fehlerberichte werden auf Gmail-Servern der Google LLC (USA) aufbewahrt, aus TestFlight-Betaversionen gesendete Fehlerberichte auf iCloud-Servern der Apple Inc. (USA). Was gespeichert wird, steht unter „Was ein Bericht enthält“; die Daten werden über das Internet übertragen, wenn du die E-Mail sendest oder auf „Senden“ tippst, und für die oben genannte Dauer aufbewahrt. Sendest du keinen Bericht, wird nichts übertragen, und die App wird in keiner Weise eingeschränkt. Datenschutz bei Google: <a href="https://policies.google.com/privacy?hl=de">policies.google.com/privacy</a> · Datenschutzkontakt bei Apple: <a href="https://www.apple.com/de/legal/privacy/contact/">apple.com/legal/privacy/contact</a></p>
+
+    <h2>Weitergabe von Daten</h2>
+    <p>Die App hat keinen eigenen Server und enthält keine Werbe-, Analyse- oder Tracking-Komponenten. Abgesehen von Fehlerberichten, die du selbst sendest, übermittelt sie keine Nutzungsdaten und gibt nichts an Dritte weiter.</p>
+
+    <h2>Exportieren und Teilen</h2>
+    <p>Wenn du ein Manuskript exportierst oder aus deiner Schreibbilanz eine Teilkarte (ein Bild) machst, entscheidest du selbst über das Teilen-Menü (iPhone und iPad) oder den Sichern-Dialog (Mac), wo die Datei oder das Bild gespeichert oder wohin es gesendet wird. Teilkarten enthalten keine Projekt- oder Dateinamen. Der Entwickler ist daran nicht beteiligt und kann die Inhalte nicht sehen.</p>
+
+    <h2>Kinder</h2>
+    <p>Die App hat keine Registrierung und erhebt von sich aus keine personenbezogenen Daten. Fehlerberichte werden nur gesendet, wenn du dich selbst dafür entscheidest.</p>
+
+    <h2>Änderungen dieser Erklärung</h2>
+    <p>Ändert sich diese Erklärung, wird die aktualisierte Fassung auf dieser Seite veröffentlicht.</p>
+
+    <h2>Kontakt und Verantwortlicher für den Datenschutz</h2>
+    <p>RootNest – verantwortlich für den Datenschutz: Inhaber · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
+</section>
+</article>
+<article lang="fr">
+<h1>Politique de confidentialité de DashNovel</h1>
+<p class="updated">En vigueur : 9 novembre 2026 (première entrée en vigueur : 21 septembre 2026)</p>
+<p class="notice">Cette traduction vous est fournie pour votre commodité. En cas de divergence avec l’original coréen, l’original coréen fait foi.</p>
+<section>
+<h2>En résumé</h2>
+    <p>DashNovel <strong>ne collecte automatiquement aucune donnée personnelle.</strong> Tout ce que vous écrivez, ainsi que vos statistiques d’écriture, est enregistré uniquement sur vos appareils et, si vous activez la synchronisation iCloud, dans votre propre compte iCloud. Le développeur n’exploite aucun serveur propre et ne peut pas accéder à ces données. Ce n’est que lorsque vous choisissez d’envoyer un <strong>signalement de bug</strong> que ce signalement (qui ne contient jamais votre texte) parvient au développeur.</p>
+
+    <h2>Informations que nous collectons</h2>
+    <p>Il n’y a ni compte ni connexion, et l’app ne recueille d’elle-même aucune information personnelle. Nous ne recevons les informations énumérées ci-dessous sous « Signalements de bug » que si vous choisissez d’en envoyer un.</p>
+
+    <h2>Ce que l’app enregistre</h2>
+    <ul>
+      <li>Vos manuscrits et les dossiers et fichiers qui les contiennent, les fiches de personnages, d’objets et de chronologie, ainsi que les notes</li>
+      <li>Les statistiques d’écriture (caractères saisis, caractères écrits, temps d’écriture, historique des objectifs atteints)</li>
+      <li>Les réglages de l’app (langue d’affichage, police, mode de comptage, etc.)</li>
+      <li>Les sauvegardes automatiques (versions antérieures de vos manuscrits — conservées uniquement sur l’appareil concerné)</li>
+      <li>Les fichiers de police que vous importez (conservés uniquement sur l’appareil concerné)</li>
+    </ul>
+    <p>Toutes ces données sont enregistrées sur votre appareil. Lorsque vous supprimez l’app, les données de cet appareil sont supprimées avec elle.</p>
+
+    <h2>Synchronisation iCloud</h2>
+    <p>Si vous activez la synchronisation iCloud (Réglages › Général — elle s’active ou se désactive séparément sur chaque appareil), vos manuscrits, vos statistiques et certains réglages sont enregistrés dans votre propre compte iCloud par l’intermédiaire du service iCloud d’Apple et synchronisés avec vos autres appareils utilisant le même compte. Ces données restent dans votre propre compte, et le développeur ne peut pas y accéder. Les données synchronisées dans votre compte iCloud y demeurent même si vous supprimez l’app. Les sauvegardes automatiques et les polices importées ne sont pas synchronisées.</p>
+
+    <h2>Abonnements et paiements</h2>
+    <p>Les abonnements, les essais gratuits et les paiements sont entièrement gérés par l’App Store d’Apple. Le développeur ne reçoit ni votre nom, ni vos coordonnées, ni votre moyen de paiement. L’app vérifie sur votre appareil, au moyen de StoreKit d’Apple, si vous êtes abonné et jusqu’à quand, et n’envoie pas ces informations au développeur. Vous pouvez gérer ou résilier un abonnement dans les réglages de votre compte Apple sur votre appareil.</p>
+
+    <h2>Verrouillage</h2>
+    <p>Le verrou de l’app et le verrou du projet utilisent Face ID, Touch ID ou le code de votre appareil. L’authentification est assurée par l’appareil (iOS ou macOS) ; l’app ne reçoit ni n’enregistre jamais de données biométriques.</p>
+
+    <h2>Signalements de bug</h2>
+    <p>Lorsque vous choisissez Réglages › Aide › « Envoyer le signalement » (dans les versions bêta TestFlight, également le bouton « Signaler un bug » en haut de l’écran), une fenêtre s’ouvre et affiche ce qui sera envoyé. Un signalement n’est envoyé que lorsque vous touchez « Envoyer », jamais automatiquement. Ne pas en envoyer ne limite en rien l’utilisation de l’app.</p>
+    <p><strong>Contenu d’un signalement</strong></p>
+    <ul>
+      <li>La version et le numéro de build de l’app, les builds que vous avez utilisés, le modèle de l’appareil, la version du système d’exploitation, les réglages de langue et le fuseau horaire</li>
+      <li>L’espace de stockage disponible, ainsi que la taille et la date de création de la base de données des manuscrits</li>
+      <li>Des nombres et des longueurs relatifs à votre bibliothèque (nombre de projets, de dossiers, de fichiers, de fiches, de notes et d’enregistrements statistiques, et chiffres par projet tels que la date de création, le nombre de fichiers et la longueur du texte)</li>
+      <li>L’état de la synchronisation iCloud (activée ou désactivée, état de la connexion, éléments en attente d’envoi, heure de la dernière réception, codes d’erreur) ainsi que le nombre et la taille des sauvegardes automatiques</li>
+      <li>Les réglages de l’app (police, thème, mode de comptage, etc.)</li>
+      <li>Un journal des événements survenus dans l’app (heure, type et code d’erreur — jusqu’aux 500 plus récents) et des résumés des plantages et blocages passés (informations techniques fournies par le système d’exploitation)</li>
+      <li>Une description que vous rédigez vous-même (facultative) et, dans les versions bêta TestFlight, un nom (facultatif)</li>
+      <li>Si vous l’envoyez par e-mail, votre adresse e-mail et tout ce que vous ajoutez à l’e-mail</li>
+      <li>Les noms des projets et des fichiers, uniquement si vous activez « Inclure les noms des projets et des fichiers »</li>
+    </ul>
+    <p><strong>Ce qu’un signalement ne contient jamais :</strong> vos manuscrits, le contenu des fiches ou des notes, l’adresse e-mail ou le nom de votre compte iCloud, vos contacts, votre position ni aucun identifiant publicitaire.</p>
+    <p><strong>Destination :</strong> dans la version App Store, le signalement est joint sous forme de fichier à un e-mail que l’app transmet à votre app de messagerie, et c’est vous qui l’envoyez (à <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a>). L’app n’envoie le signalement nulle part ailleurs. Si vous n’avez pas d’app de messagerie, vous pouvez exporter le fichier du signalement et l’envoyer vous-même.</p>
+    <p>Les versions bêta TestFlight enregistrent les signalements dans l’espace réservé à DashNovel au sein de la base de données publique iCloud (CloudKit) d’Apple. CloudKit enregistre également un numéro qui permet de distinguer les expéditeurs (un numéro attribué par Apple pour cette app uniquement, qui n’est ni votre adresse e-mail ni votre vrai nom). Les autres utilisateurs ne peuvent pas lire les signalements ; seul le développeur le peut. Si vous n’êtes pas connecté à iCloud, le signalement n’est pas envoyé, et vous pouvez transmettre vous-même le fichier du signalement.</p>
+    <p><strong>Utilisation :</strong> uniquement pour trouver et corriger des problèmes. Les signalements ne sont jamais utilisés à des fins de publicité, de suivi ou de marketing, et ne sont jamais communiqués ni vendus à des tiers.</p>
+    <p><strong>Durée de conservation :</strong> aussi longtemps que nécessaire pour corriger le problème ; les signalements sont supprimés dans un délai d’un an à compter de leur réception.</p>
+    <p><strong>Accès et suppression :</strong> pour consulter ou faire supprimer un signalement que vous avez envoyé, écrivez à l’adresse de contact ci-dessous en indiquant sa date d’envoi et le modèle de votre appareil. Nous le retrouverons pour vous le montrer ou le supprimer.</p>
+
+    <h2>Conservation hors de votre pays</h2>
+    <p>Les signalements reçus par e-mail sont conservés sur les serveurs Gmail de Google LLC (États-Unis) ; ceux envoyés depuis les versions bêta TestFlight sont conservés sur les serveurs iCloud d’Apple Inc. (États-Unis). Les éléments conservés sont ceux énumérés sous « Contenu d’un signalement » ; ils sont transmis par Internet lorsque vous envoyez l’e-mail ou touchez « Envoyer », et conservés pendant la durée indiquée ci-dessus. Si vous n’envoyez pas de signalement, rien n’est transmis, et l’utilisation de l’app n’est en rien limitée. Confidentialité chez Google : <a href="https://policies.google.com/privacy?hl=fr">policies.google.com/privacy</a> · Contact confidentialité d’Apple : <a href="https://www.apple.com/fr/legal/privacy/contact/">apple.com/legal/privacy/contact</a></p>
+
+    <h2>Données transmises ailleurs</h2>
+    <p>L’app n’a aucun serveur propre et ne contient aucun composant de publicité, d’analyse ou de suivi. En dehors des signalements de bug que vous choisissez d’envoyer, elle n’envoie aucune donnée d’utilisation et ne communique rien à des tiers.</p>
+
+    <h2>Exportation et partage</h2>
+    <p>Lorsque vous exportez un manuscrit ou transformez votre bilan d’écriture en carte à partager (une image), c’est vous qui décidez où le fichier ou l’image est enregistré ou envoyé, au moyen de la feuille de partage (iPhone et iPad) ou de la fenêtre d’enregistrement (Mac). Les cartes à partager ne contiennent pas les noms des projets ni des fichiers. Le développeur n’intervient pas dans ce processus et ne peut pas en voir le contenu.</p>
+
+    <h2>Enfants</h2>
+    <p>L’app ne comporte aucune inscription et ne collecte automatiquement aucune donnée personnelle. Les signalements de bug ne sont envoyés que lorsque l’utilisateur choisit d’en envoyer un.</p>
+
+    <h2>Modifications de cette politique</h2>
+    <p>Si cette politique change, la version mise à jour sera publiée sur cette page.</p>
+
+    <h2>Contact et responsable de la protection des données</h2>
+    <p>RootNest — responsable de la protection des données personnelles : le dirigeant · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
+</section>
+</article>
+<article lang="it">
+<h1>Informativa sulla privacy di DashNovel</h1>
+<p class="updated">In vigore dal 9 novembre 2026 (prima entrata in vigore: 21 settembre 2026)</p>
+<p class="notice">Questa traduzione è fornita per comodità. In caso di differenze rispetto all'originale in coreano, prevale l'originale in coreano.</p>
+<section>
+<h2>In sintesi</h2>
+    <p>DashNovel <strong>non raccoglie di propria iniziativa dati personali.</strong> Tutto ciò che scrivi, insieme alle statistiche di scrittura, viene salvato soltanto sui tuoi dispositivi e, se attivi la sincronizzazione iCloud, nel tuo account iCloud personale. Lo sviluppatore non gestisce alcun server proprio e non può accedere a questi dati. Solo quando scegli di inviare una <strong>segnalazione di bug</strong> quella segnalazione (che non contiene mai i tuoi testi) arriva allo sviluppatore.</p>
+
+    <h2>Informazioni che raccogliamo</h2>
+    <p>Non ci sono account né accessi, e l'app non raccoglie di propria iniziativa informazioni personali. Riceviamo le informazioni elencate più sotto in «Segnalazioni di bug» solo se scegli di inviarne una.</p>
+
+    <h2>Che cosa salva l'app</h2>
+    <ul>
+      <li>I tuoi manoscritti e la struttura di cartelle e file che li contiene, le schede di personaggi, oggetti e cronologia, e le note</li>
+      <li>Le statistiche di scrittura (caratteri digitati, caratteri scritti, tempo di lavoro, risultati degli obiettivi)</li>
+      <li>Le impostazioni dell'app (lingua di visualizzazione, font, base di conteggio e così via)</li>
+      <li>I backup automatici (versioni precedenti dei tuoi manoscritti, conservate solo su quel dispositivo)</li>
+      <li>I file di font che importi (conservati solo su quel dispositivo)</li>
+    </ul>
+    <p>Tutto questo viene salvato sul tuo dispositivo. Quando elimini l'app, i dati su quel dispositivo vengono rimossi insieme a essa.</p>
+
+    <h2>Sincronizzazione iCloud</h2>
+    <p>Se attivi la sincronizzazione iCloud (Impostazioni › Generali; puoi attivarla o disattivarla su ciascun dispositivo), i tuoi manoscritti, le statistiche e alcune impostazioni vengono salvati nel tuo account iCloud personale tramite iCloud di Apple e mantenuti sincronizzati con gli altri tuoi dispositivi collegati allo stesso account. Questi dati restano nel tuo account personale e lo sviluppatore non può accedervi. I dati sincronizzati nel tuo account iCloud restano lì anche se elimini l'app. I backup automatici e i font importati non vengono sincronizzati.</p>
+
+    <h2>Abbonamenti e pagamenti</h2>
+    <p>Abbonamenti, prove gratuite e pagamenti sono gestiti interamente dall'App Store di Apple. Lo sviluppatore non riceve il tuo nome, i tuoi recapiti né il tuo metodo di pagamento. L'app verifica sul tuo dispositivo, tramite StoreKit di Apple, se sei abbonato e fino a quando, e non invia queste informazioni allo sviluppatore. Puoi gestire o annullare un abbonamento nelle impostazioni dell'Account Apple sul tuo dispositivo.</p>
+
+    <h2>Blocco</h2>
+    <p>Il blocco dell'app e il blocco dei progetti usano Face ID, Touch ID o il codice del tuo dispositivo. L'autenticazione è gestita dal dispositivo (iOS o macOS); l'app non riceve né salva mai dati biometrici.</p>
+
+    <h2>Segnalazioni di bug</h2>
+    <p>Scegliendo Impostazioni › Aiuto › «Invia segnalazione» (nelle versioni beta di TestFlight, anche il pulsante «Segnala un bug» in cima allo schermo) si apre una finestra che mostra che cosa verrà inviato. Una segnalazione viene inviata solo quando tocchi «Invia», mai automaticamente. Non inviarla non limita in alcun modo l'uso dell'app.</p>
+    <p><strong>Che cosa contiene una segnalazione</strong></p>
+    <ul>
+      <li>Versione e build dell'app, le build che hai usato, modello del dispositivo, versione del sistema operativo, impostazioni della lingua e fuso orario</li>
+      <li>Spazio di archiviazione libero, e dimensione e data di creazione dell'archivio dei manoscritti</li>
+      <li>Quantità e lunghezze nella tua Libreria (il numero di progetti, cartelle, file, schede, note e dati statistici, e valori per progetto come data di creazione, numero di file e lunghezza del testo)</li>
+      <li>Stato della sincronizzazione iCloud (attiva o disattivata, stato della connessione, elementi in attesa di caricamento, ora dell'ultima ricezione, codici di errore) e numero e dimensione dei backup automatici</li>
+      <li>Impostazioni dell'app (font, tema, base di conteggio e così via)</li>
+      <li>Un registro degli eventi nell'app (ora, tipo e codice di errore, fino agli ultimi 500) e riepiloghi di arresti anomali e blocchi passati (informazioni tecniche fornite dal sistema operativo)</li>
+      <li>Una descrizione che scrivi tu (facoltativa) e, nelle versioni beta di TestFlight, un nome (facoltativo)</li>
+      <li>Se la invii via email, il tuo indirizzo email e qualsiasi cosa tu aggiunga all'email</li>
+      <li>I nomi di progetti e file, solo se attivi «Includi nomi di progetti e file»</li>
+    </ul>
+    <p><strong>Che cosa una segnalazione non contiene mai:</strong> i tuoi manoscritti, il contenuto di schede o note, l'indirizzo email o il nome del tuo account iCloud, i contatti, la posizione o gli identificatori pubblicitari.</p>
+    <p><strong>Dove va:</strong> nella versione dell'App Store, la segnalazione viene allegata come file a un'email che l'app passa alla tua app di posta, e sei tu a inviarla (a <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a>). L'app non invia la segnalazione da nessun'altra parte. Se non hai un'app di posta, puoi esportare il file della segnalazione e inviarlo tu stesso.</p>
+    <p>Le versioni beta di TestFlight salvano le segnalazioni nello spazio riservato a DashNovel all'interno del database pubblico di iCloud (CloudKit) di Apple. CloudKit registra anche un numero che distingue chi invia (un numero che Apple assegna solo per questa app, non il tuo indirizzo email né il tuo vero nome). Gli altri utenti non possono leggere le segnalazioni; può leggerle solo lo sviluppatore. Se non hai effettuato l'accesso a iCloud, la segnalazione non viene inviata e puoi invece consegnare tu stesso il file della segnalazione.</p>
+    <p><strong>Come viene usata:</strong> solo per individuare e risolvere i problemi. Le segnalazioni non vengono mai usate per pubblicità, tracciamento o marketing, e non vengono mai condivise con terzi né vendute a terzi.</p>
+    <p><strong>Per quanto tempo viene conservata:</strong> per il tempo necessario a risolvere il problema, e comunque viene eliminata entro un anno dalla ricezione.</p>
+    <p><strong>Accesso ed eliminazione:</strong> per vedere o eliminare una segnalazione che hai inviato, scrivi all'indirizzo di contatto qui sotto indicando la data di invio e il modello del dispositivo. La troveremo e te la mostreremo, oppure la elimineremo.</p>
+
+    <h2>Conservazione al di fuori del tuo Paese</h2>
+    <p>Le segnalazioni di bug ricevute via email sono conservate sui server Gmail di Google LLC (Stati Uniti); le segnalazioni di bug inviate dalle versioni beta di TestFlight sono conservate sui server iCloud di Apple Inc. (Stati Uniti). Ciò che viene conservato è elencato in «Che cosa contiene una segnalazione»; i dati vengono trasmessi via internet quando invii l'email o tocchi «Invia», e sono conservati per il periodo indicato sopra. Se non invii una segnalazione, non viene trasmesso nulla e l'uso dell'app non è limitato in alcun modo. Privacy di Google: <a href="https://policies.google.com/privacy?hl=it">policies.google.com/privacy</a> · Contatti di Apple per la privacy: <a href="https://www.apple.com/it/legal/privacy/contact/">apple.com/legal/privacy/contact</a></p>
+
+    <h2>Dati inviati altrove</h2>
+    <p>L'app non ha server propri e non contiene componenti di pubblicità, analisi o tracciamento. A parte le segnalazioni di bug che scegli di inviare, non invia dati di utilizzo e non condivide nulla con terzi.</p>
+
+    <h2>Esportazione e condivisione</h2>
+    <p>Quando esporti un manoscritto o trasformi i tuoi dati di scrittura in una scheda da condividere (un'immagine), sei tu a decidere dove salvare o inviare il file o l'immagine, tramite il foglio di condivisione (iPhone e iPad) o la finestra di salvataggio (Mac). Le schede da condividere non includono i nomi di progetti o file. Lo sviluppatore non interviene in questo processo e non può vederne il contenuto.</p>
+
+    <h2>Minori</h2>
+    <p>L'app non prevede alcuna registrazione e non raccoglie di propria iniziativa dati personali. Le segnalazioni di bug vengono inviate solo quando l'utente sceglie di inviarne una.</p>
+
+    <h2>Modifiche a questa informativa</h2>
+    <p>Se questa informativa cambia, la versione aggiornata verrà pubblicata su questa pagina.</p>
+
+    <h2>Contatti e responsabile della privacy</h2>
+    <p>RootNest — responsabile della privacy: il titolare · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
+</section>
+</article>
+<article lang="id">
+<h1>Kebijakan Privasi DashNovel</h1>
+<p class="updated">Berlaku: 9 November 2026 (pertama kali berlaku: 21 September 2026)</p>
+<p class="notice">Terjemahan ini disediakan untuk kemudahan Anda. Jika terdapat perbedaan dengan naskah asli berbahasa Korea, yang berlaku adalah naskah asli berbahasa Korea.</p>
+<section>
+<h2>Ringkasan</h2>
+    <p>DashNovel <strong>tidak mengumpulkan data pribadi secara otomatis.</strong> Semua yang Anda tulis, beserta statistik menulis Anda, hanya disimpan di perangkat Anda dan, jika Anda menyalakan sinkronisasi iCloud, di akun iCloud Anda sendiri. Pengembang tidak menjalankan server sendiri dan tidak dapat mengakses data ini. Hanya ketika Anda memilih untuk mengirim <strong>laporan bug</strong>, laporan tersebut (yang tidak pernah berisi tulisan Anda) sampai kepada pengembang.</p>
+
+    <h2>Informasi yang kami kumpulkan</h2>
+    <p>Tidak ada akun maupun proses masuk, dan aplikasi tidak mengumpulkan informasi pribadi dengan sendirinya. Kami hanya menerima informasi yang tercantum di bagian “Laporan bug” di bawah jika Anda memilih untuk mengirimnya.</p>
+
+    <h2>Yang disimpan aplikasi</h2>
+    <ul>
+      <li>Naskah Anda beserta folder dan berkas yang memuatnya, kartu tokoh, objek, dan linimasa, serta memo</li>
+      <li>Statistik menulis (jumlah ketikan, karakter yang ditulis, waktu menulis, catatan pencapaian target)</li>
+      <li>Pengaturan aplikasi (bahasa tampilan, font, dasar hitungan, dan sebagainya)</li>
+      <li>Cadangan otomatis (versi naskah sebelumnya — hanya disimpan di perangkat itu)</li>
+      <li>Berkas font yang Anda impor (hanya disimpan di perangkat itu)</li>
+    </ul>
+    <p>Semua ini disimpan di perangkat Anda. Saat Anda menghapus aplikasi, data di perangkat itu ikut terhapus.</p>
+
+    <h2>Sinkronisasi iCloud</h2>
+    <p>Jika Anda menyalakan sinkronisasi iCloud (Pengaturan › Umum — dapat dinyalakan atau dimatikan di tiap perangkat), naskah, statistik, dan sebagian pengaturan Anda disimpan di akun iCloud Anda sendiri melalui iCloud milik Apple dan diselaraskan dengan perangkat lain Anda yang memakai akun yang sama. Data ini hanya berada di akun Anda sendiri, dan pengembang tidak dapat mengaksesnya. Data yang telah disinkronkan ke akun iCloud Anda tetap tersimpan di sana meskipun Anda menghapus aplikasi. Cadangan otomatis dan font yang diimpor tidak disinkronkan.</p>
+
+    <h2>Langganan dan pembayaran</h2>
+    <p>Langganan, uji coba gratis, dan pembayaran seluruhnya ditangani oleh App Store milik Apple. Pengembang tidak menerima nama, detail kontak, atau metode pembayaran Anda. Aplikasi memeriksa apakah Anda berlangganan, dan sampai kapan, di perangkat Anda melalui StoreKit milik Apple, dan tidak mengirimkan informasi tersebut kepada pengembang. Anda dapat mengelola atau membatalkan langganan di pengaturan Akun Apple pada perangkat Anda.</p>
+
+    <h2>Kunci</h2>
+    <p>Kunci aplikasi dan kunci proyek menggunakan Face ID, Touch ID, atau kode sandi perangkat Anda. Autentikasi ditangani oleh perangkat (iOS atau macOS); aplikasi tidak pernah menerima atau menyimpan data biometrik.</p>
+
+    <h2>Laporan bug</h2>
+    <p>Memilih Pengaturan › Bantuan › “Kirim laporan bug” (di build beta TestFlight, juga tombol “Laporkan bug” di bagian atas layar) akan membuka jendela yang menampilkan apa yang akan dikirim. Laporan hanya dikirim saat Anda mengetuk “Kirim” — tidak pernah secara otomatis. Tidak mengirim laporan sama sekali tidak membatasi penggunaan aplikasi.</p>
+    <p><strong>Isi laporan</strong></p>
+    <ul>
+      <li>Versi dan build aplikasi, build yang pernah Anda gunakan, model perangkat, versi sistem operasi, pengaturan bahasa, dan zona waktu</li>
+      <li>Sisa ruang penyimpanan, serta ukuran dan tanggal pembuatan tempat penyimpanan naskah</li>
+      <li>Jumlah dan panjang isi pustaka Anda (jumlah proyek, folder, berkas, kartu, memo, dan catatan statistik, serta angka per proyek seperti tanggal pembuatan, jumlah berkas, dan panjang teks)</li>
+      <li>Status sinkronisasi iCloud (nyala atau mati, status koneksi, item yang menunggu diunggah, waktu terakhir menerima data, kode galat) serta jumlah dan ukuran cadangan otomatis</li>
+      <li>Pengaturan aplikasi (font, tema, dasar hitungan, dan sebagainya)</li>
+      <li>Log peristiwa di dalam aplikasi (waktu, jenis, dan kode galat — hingga 500 yang terbaru) serta ringkasan crash dan aplikasi macet sebelumnya (informasi teknis yang disediakan oleh sistem operasi)</li>
+      <li>Deskripsi yang Anda ketik sendiri (opsional), dan di build beta TestFlight, nama (opsional)</li>
+      <li>Jika Anda mengirimnya lewat email, alamat email Anda dan apa pun yang Anda tambahkan ke email tersebut</li>
+      <li>Nama proyek dan berkas, hanya jika Anda menyalakan “Sertakan nama proyek dan berkas”</li>
+    </ul>
+    <p><strong>Yang tidak pernah dimuat dalam laporan:</strong> naskah Anda, isi kartu atau memo, alamat email atau nama akun iCloud Anda, kontak, lokasi, maupun pengenal iklan.</p>
+    <p><strong>Tujuan pengiriman:</strong> Di versi App Store, laporan dilampirkan sebagai berkas pada email yang diserahkan aplikasi ke app email Anda, lalu Anda sendiri yang mengirimnya (ke <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a>). Aplikasi tidak mengirim laporan ke tempat lain. Jika Anda tidak memiliki app email, Anda dapat mengekspor berkas laporan dan mengirimkannya sendiri.</p>
+    <p>Build beta TestFlight menyimpan laporan di ruang khusus DashNovel pada basis data publik iCloud (CloudKit) milik Apple. CloudKit juga mencatat sebuah nomor yang membedakan para pengirim (nomor yang diberikan Apple khusus untuk aplikasi ini — bukan alamat email atau nama asli Anda). Pengguna lain tidak dapat membaca laporan; hanya pengembang yang dapat membacanya. Jika Anda tidak masuk ke iCloud, laporan tidak dikirim, dan sebagai gantinya Anda dapat menyerahkan berkas laporan itu sendiri.</p>
+    <p><strong>Penggunaan:</strong> Hanya untuk menemukan dan memperbaiki masalah. Laporan tidak pernah digunakan untuk iklan, pelacakan, atau pemasaran, dan tidak pernah dibagikan atau dijual kepada pihak ketiga.</p>
+    <p><strong>Lama penyimpanan:</strong> Selama diperlukan untuk memperbaiki masalah, dan dihapus dalam waktu satu tahun sejak diterima.</p>
+    <p><strong>Akses dan penghapusan:</strong> Untuk melihat atau menghapus laporan yang pernah Anda kirim, kirimkan email ke alamat kontak di bawah dengan menyebutkan tanggal pengiriman dan model perangkat Anda. Kami akan menemukannya, lalu menunjukkannya kepada Anda atau menghapusnya.</p>
+
+    <h2>Penyimpanan di luar negara Anda</h2>
+    <p>Laporan bug yang diterima melalui email disimpan di server Gmail milik Google LLC (Amerika Serikat); laporan bug yang dikirim dari build beta TestFlight disimpan di server iCloud milik Apple Inc. (Amerika Serikat). Hal yang disimpan tercantum di bagian “Isi laporan”; data tersebut dikirim melalui internet saat Anda mengirim email atau mengetuk “Kirim”, dan disimpan selama jangka waktu di atas. Jika Anda tidak mengirim laporan, tidak ada data yang dikirim, dan penggunaan aplikasi sama sekali tidak dibatasi. Privasi Google: <a href="https://policies.google.com/privacy?hl=id">policies.google.com/privacy</a> · Kontak privasi Apple: <a href="https://www.apple.com/legal/privacy/contact/">apple.com/legal/privacy/contact</a></p>
+
+    <h2>Data yang dikirim ke pihak lain</h2>
+    <p>Aplikasi tidak memiliki server sendiri dan tidak berisi komponen iklan, analitik, maupun pelacakan. Selain laporan bug yang Anda pilih untuk dikirim, aplikasi tidak mengirim data penggunaan dan tidak membagikan apa pun kepada pihak ketiga.</p>
+
+    <h2>Ekspor dan berbagi</h2>
+    <p>Saat Anda mengekspor naskah atau mengubah catatan menulis Anda menjadi kartu berbagi (sebuah gambar), Anda sendiri yang menentukan ke mana berkas atau gambar itu disimpan atau dikirim, melalui lembar berbagi (iPhone dan iPad) atau panel simpan (Mac). Kartu berbagi tidak memuat nama proyek atau berkas. Pengembang tidak terlibat dan tidak dapat melihat isinya.</p>
+
+    <h2>Anak-anak</h2>
+    <p>Aplikasi ini tidak memerlukan pendaftaran dan tidak mengumpulkan data pribadi secara otomatis. Laporan bug hanya dikirim ketika pengguna memilih untuk mengirimnya.</p>
+
+    <h2>Perubahan kebijakan ini</h2>
+    <p>Jika kebijakan ini berubah, versi terbarunya akan dipublikasikan di halaman ini.</p>
+
+    <h2>Kontak dan penanggung jawab privasi</h2>
+    <p>RootNest — penanggung jawab privasi: Pemilik · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
+</section>
+</article>
+<article lang="vi">
+<h1>Chính sách quyền riêng tư của DashNovel</h1>
+<p class="updated">Có hiệu lực từ: ngày 9 tháng 11 năm 2026 (có hiệu lực lần đầu: ngày 21 tháng 9 năm 2026)</p>
+<p class="notice">Bản dịch này được cung cấp để bạn tiện tham khảo. Nếu có điểm khác với bản gốc tiếng Hàn, bản gốc tiếng Hàn được ưu tiên áp dụng.</p>
+<section>
+<h2>Tóm tắt</h2>
+    <p>DashNovel <strong>không tự động thu thập dữ liệu cá nhân.</strong> Mọi thứ bạn viết, cùng với số liệu thống kê viết của bạn, chỉ được lưu trên thiết bị của bạn và, nếu bạn bật đồng bộ iCloud, trong chính tài khoản iCloud của bạn. Nhà phát triển không vận hành máy chủ riêng nào và không thể truy cập dữ liệu này. Chỉ khi bạn chọn gửi <strong>báo lỗi</strong>, báo lỗi đó (không bao giờ chứa nội dung bạn viết) mới đến được nhà phát triển.</p>
+
+    <h2>Thông tin chúng tôi thu thập</h2>
+    <p>Không có tài khoản hay đăng nhập, và ứng dụng không tự thu thập thông tin cá nhân. Chúng tôi chỉ nhận những thông tin được liệt kê trong mục “Báo lỗi” dưới đây khi bạn chọn gửi báo lỗi.</p>
+
+    <h2>Những gì ứng dụng lưu trữ</h2>
+    <ul>
+      <li>Bản thảo của bạn cùng các thư mục và tệp chứa chúng, các thẻ nhân vật, vật thể và dòng thời gian, và ghi chú</li>
+      <li>Thống kê viết (lượng đã gõ, lượng đã viết, thời gian viết, lịch sử đạt mục tiêu)</li>
+      <li>Cài đặt ứng dụng (ngôn ngữ hiển thị, phông chữ, cách đếm, v.v.)</li>
+      <li>Bản sao lưu tự động (các phiên bản trước đây của bản thảo — chỉ lưu trên thiết bị đó)</li>
+      <li>Tệp phông chữ bạn nhập (chỉ lưu trên thiết bị đó)</li>
+    </ul>
+    <p>Tất cả những dữ liệu này được lưu trên thiết bị của bạn. Khi bạn xóa ứng dụng, dữ liệu trên thiết bị đó cũng bị xóa theo.</p>
+
+    <h2>Đồng bộ iCloud</h2>
+    <p>Nếu bạn bật đồng bộ iCloud (Cài đặt › Cài đặt chung — có thể bật hoặc tắt riêng trên từng thiết bị), bản thảo, thống kê và một số cài đặt của bạn sẽ được lưu vào chính tài khoản iCloud của bạn thông qua iCloud của Apple và được đồng bộ với các thiết bị khác dùng cùng tài khoản. Dữ liệu này chỉ nằm trong tài khoản của bạn, và nhà phát triển không thể truy cập. Dữ liệu đã được đồng bộ lên tài khoản iCloud vẫn còn ở đó ngay cả khi bạn xóa ứng dụng. Bản sao lưu tự động và phông chữ đã nhập không được đồng bộ.</p>
+
+    <h2>Gói đăng ký và thanh toán</h2>
+    <p>Gói đăng ký, dùng thử miễn phí và thanh toán đều do App Store của Apple xử lý. Nhà phát triển không nhận tên, thông tin liên hệ hay phương thức thanh toán của bạn. Ứng dụng kiểm tra việc bạn có đang đăng ký hay không, và đến khi nào, ngay trên thiết bị thông qua StoreKit của Apple, và không gửi thông tin đó cho nhà phát triển. Bạn có thể quản lý hoặc hủy gói đăng ký trong phần cài đặt Tài khoản Apple trên thiết bị.</p>
+
+    <h2>Khóa</h2>
+    <p>Khóa ứng dụng và khóa tác phẩm sử dụng Face ID, Touch ID hoặc mật mã của thiết bị. Việc xác thực do thiết bị (iOS hoặc macOS) xử lý; ứng dụng không bao giờ nhận hay lưu trữ dữ liệu sinh trắc học.</p>
+
+    <h2>Báo lỗi</h2>
+    <p>Khi bạn chọn Cài đặt › Trợ giúp › “Gửi báo lỗi” (trong các bản thử nghiệm TestFlight, còn có cả nút “Báo lỗi” ở phía trên màn hình), một cửa sổ sẽ mở ra cho thấy những gì sẽ được gửi. Báo lỗi chỉ được gửi khi bạn chạm “Gửi” — không bao giờ tự động. Việc không gửi báo lỗi không hạn chế bạn dùng ứng dụng theo bất kỳ cách nào.</p>
+    <p><strong>Những gì một báo lỗi chứa</strong></p>
+    <ul>
+      <li>Phiên bản và số bản dựng của ứng dụng, các bản dựng bạn đã dùng, kiểu máy, phiên bản hệ điều hành, cài đặt ngôn ngữ và múi giờ</li>
+      <li>Dung lượng lưu trữ còn trống, kích thước và ngày tạo của kho lưu bản thảo</li>
+      <li>Số lượng và độ dài trong thư viện của bạn (số tác phẩm, thư mục, tệp, thẻ, ghi chú và bản ghi thống kê, cùng các con số theo từng tác phẩm như ngày tạo, số tệp và độ dài văn bản)</li>
+      <li>Trạng thái đồng bộ iCloud (bật hay tắt, trạng thái kết nối, số mục đang chờ tải lên, thời điểm tải về gần nhất, mã lỗi) và số lượng, dung lượng của các bản sao lưu tự động</li>
+      <li>Cài đặt ứng dụng (phông chữ, chủ đề, cách đếm, v.v.)</li>
+      <li>Nhật ký các sự kiện trong ứng dụng (thời gian, loại và mã lỗi — tối đa 500 mục gần nhất) và bản tóm tắt các lần ứng dụng bị thoát đột ngột hoặc bị treo trước đây (thông tin kỹ thuật do hệ điều hành cung cấp)</li>
+      <li>Phần mô tả do bạn tự nhập (không bắt buộc), và trong các bản thử nghiệm TestFlight là tên (không bắt buộc)</li>
+      <li>Nếu bạn gửi qua email: địa chỉ email của bạn và mọi nội dung bạn thêm vào email</li>
+      <li>Tên tác phẩm và tên tệp, chỉ khi bạn bật “Gửi kèm tên tác phẩm và tệp”</li>
+    </ul>
+    <p><strong>Những gì báo lỗi không bao giờ chứa:</strong> bản thảo của bạn, nội dung thẻ hoặc ghi chú, địa chỉ email hay tên trong tài khoản iCloud của bạn, danh bạ, vị trí hoặc mã nhận dạng quảng cáo.</p>
+    <p><strong>Nơi báo lỗi được gửi đến:</strong> Trong phiên bản App Store, báo lỗi được đính kèm dưới dạng tệp vào một email mà ứng dụng chuyển sang ứng dụng thư của bạn, và bạn tự gửi email đó (đến <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a>). Ứng dụng không gửi báo lỗi đến bất kỳ nơi nào khác. Nếu bạn không có ứng dụng thư, bạn có thể xuất tệp báo lỗi và tự gửi đi.</p>
+    <p>Các bản thử nghiệm TestFlight lưu báo lỗi trong vùng riêng của DashNovel thuộc cơ sở dữ liệu công khai iCloud (CloudKit) của Apple. CloudKit cũng ghi lại một mã số để phân biệt người gửi (một mã số Apple cấp riêng cho ứng dụng này — không phải địa chỉ email hay tên thật của bạn). Người dùng khác không thể đọc báo lỗi; chỉ nhà phát triển mới đọc được. Nếu bạn chưa đăng nhập iCloud, báo lỗi sẽ không được gửi, và thay vào đó bạn có thể tự chuyển tệp báo lỗi đi.</p>
+    <p><strong>Mục đích sử dụng:</strong> Chỉ để tìm và khắc phục sự cố. Báo lỗi không bao giờ được dùng cho quảng cáo, theo dõi hay tiếp thị, và không bao giờ được cung cấp hay bán cho bên thứ ba.</p>
+    <p><strong>Thời gian lưu giữ:</strong> Trong thời gian cần thiết để khắc phục sự cố, và được xóa trong vòng một năm kể từ ngày nhận.</p>
+    <p><strong>Xem và xóa:</strong> Để xem hoặc xóa một báo lỗi bạn đã gửi, hãy viết thư đến địa chỉ liên hệ bên dưới, ghi rõ ngày gửi và kiểu máy của bạn. Chúng tôi sẽ tìm báo lỗi đó rồi cho bạn xem hoặc xóa nó.</p>
+
+    <h2>Lưu trữ ở nước ngoài</h2>
+    <p>Báo lỗi nhận qua email được lưu trên máy chủ Gmail của Google LLC (Hoa Kỳ); báo lỗi gửi từ các bản thử nghiệm TestFlight được lưu trên máy chủ iCloud của Apple Inc. (Hoa Kỳ). Những gì được lưu là các mục liệt kê trong phần “Những gì một báo lỗi chứa”; dữ liệu được truyền qua internet khi bạn gửi email hoặc chạm “Gửi”, và được lưu giữ trong thời gian nêu ở trên. Nếu bạn không gửi báo lỗi, sẽ không có gì được truyền đi, và việc dùng ứng dụng không bị hạn chế theo bất kỳ cách nào. Quyền riêng tư của Google: <a href="https://policies.google.com/privacy?hl=vi">policies.google.com/privacy</a> · Liên hệ về quyền riêng tư của Apple: <a href="https://www.apple.com/legal/privacy/contact/">apple.com/legal/privacy/contact</a></p>
+
+    <h2>Dữ liệu gửi ra bên ngoài</h2>
+    <p>Ứng dụng không có máy chủ riêng và không chứa bất kỳ thành phần quảng cáo, phân tích hay theo dõi nào. Ngoài các báo lỗi bạn chọn gửi, ứng dụng không gửi dữ liệu sử dụng và không chia sẻ bất cứ thứ gì với bên thứ ba.</p>
+
+    <h2>Xuất và chia sẻ</h2>
+    <p>Khi bạn xuất bản thảo hoặc biến số liệu viết của mình thành thẻ chia sẻ (một hình ảnh), chính bạn quyết định tệp hoặc hình ảnh đó được lưu hay gửi đến đâu, thông qua bảng chia sẻ (iPhone và iPad) hoặc cửa sổ lưu (Mac). Thẻ chia sẻ không chứa tên tác phẩm hay tên tệp. Nhà phát triển không tham gia vào quá trình này và không thể xem nội dung của chúng.</p>
+
+    <h2>Trẻ em</h2>
+    <p>Ứng dụng không yêu cầu đăng ký và không tự động thu thập dữ liệu cá nhân. Báo lỗi chỉ được gửi khi người dùng tự chọn gửi.</p>
+
+    <h2>Thay đổi chính sách này</h2>
+    <p>Nếu chính sách này thay đổi, phiên bản cập nhật sẽ được đăng trên trang này.</p>
+
+    <h2>Liên hệ và người phụ trách bảo vệ dữ liệu cá nhân</h2>
+    <p>RootNest — người phụ trách bảo vệ dữ liệu cá nhân: Người đại diện · <a href="mailto:dashnovel.help@gmail.com">dashnovel.help@gmail.com</a></p>
+</section>
+</article>
 </main>
+<script>
+  (function () {
+    var langs = ['ko', 'en', 'ja', 'zh-Hant', 'zh-Hans', 'es', 'pt-BR', 'de', 'fr', 'it', 'id', 'vi'];
+    var articles = Array.prototype.slice.call(document.querySelectorAll('article[lang]'));
+    var select = document.querySelector('.bar select');
+    function norm(code) {
+      code = (code || '').toLowerCase();
+      if (code.indexOf('zh') === 0) return /hant|tw|hk|mo/.test(code) ? 'zh-Hant' : 'zh-Hans';
+      if (code.indexOf('pt') === 0) return 'pt-BR';
+      var first = code.split(/[-_]/)[0];
+      return langs.indexOf(first) >= 0 ? first : null;
+    }
+    function show(lang) {
+      articles.forEach(function (a) { a.hidden = a.lang !== lang; if (!a.hidden) document.title = a.querySelector('h1').textContent; });
+      document.documentElement.lang = lang;
+      select.value = lang;
+    }
+    document.documentElement.classList.add('js');
+    select.addEventListener('change', function () {
+      try { localStorage.setItem('privacyLang', select.value); } catch (e) {}
+      show(select.value);
+      window.scrollTo(0, 0);
+    });
+    var query = (location.search.match(/[?&]lang=([^&#]+)/) || [])[1];
+    var pick = norm(query);
+    if (!pick) { try { var saved = localStorage.getItem('privacyLang'); if (langs.indexOf(saved) >= 0) pick = saved; } catch (e) {} }
+    if (!pick) { var list = navigator.languages || [navigator.language]; for (var i = 0; i < list.length && !pick; i++) pick = norm(list[i]); }
+    show(pick || 'en');
+  })();
+</script>
 </body>
 </html>
